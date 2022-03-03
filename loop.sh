@@ -12,14 +12,22 @@ for name in ${NAMES[@]} ;
   echo "Name is :  $name"
 done
 
-# While loop 
+# For loop 
 for file in $( ls /opt/kubernetes /etc/logs ) ;
  do
   echo "The files available are: $files"
 done
 
-# OUTPUT-1
-# Name is :  khem
-# Name is :  Trinay
-# Name is :  Jenny
-# Name is :  Adi
+# While loop construct
+# The while construct tests for a condition, and if true, executes commands. It keeps looping as long as the condition is true.
+# while [ condition ]
+#  do
+#   command(s)...
+#  done
+
+NUM=10
+while [ $NUM -gt 0 ]; 
+ do
+  echo "The Value of NUM is: $NUM"
+  NUM=$(($NUM - 1))
+done
